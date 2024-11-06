@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maestría en Ciberseguridad Industrial</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hero-section {
+            background: url('https://source.unsplash.com/1600x900/?cybersecurity,technology') no-repeat center center/cover;
+            height: 100vh;
+            position: relative;
+        }
+        .overlay {
+            position: absolute;
+            inset: 0;
+            /* background-color: rgba(0, 0, 0, 0.6); */
+            background-image: url(Fondo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+        }
+        
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-gray-800 bg-opacity-90">
+        <div class="container mx-auto flex justify-between items-center px-6 py-4">
+            <div class="flex items-center">
+                <i class="fas fa-shield-alt text-blue-400 text-2xl mr-3"></i>
+                <h1 class="text-xl font-bold">Maestría en Ciberseguridad Industrial</h1>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#inicio" class="text-white hover:text-blue-400"><i class="fas fa-home mr-2"></i>Inicio</a>
+                <a href="#objetivos" class="text-white hover:text-blue-400"><i class="fas fa-bullseye mr-2"></i>Objetivos</a>
+                <a href="#programa" class="text-white hover:text-blue-400"><i class="fas fa-graduation-cap mr-2"></i>Programa</a>
+                <a href="#facilitadores" class="text-white hover:text-blue-400"><i class="fas fa-chalkboard-teacher mr-2"></i>Facilitadores</a>
+                <a href="#costos" class="text-white hover:text-blue-400"><i class="fas fa-coins mr-2"></i>Costos</a>
+                <a href="#contacto" class="text-white hover:text-blue-400"><i class="fas fa-envelope mr-2"></i>Contacto</a>
+            </div>
+            <button id="menuBtn" class="md:hidden text-white">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden fixed w-full bg-gray-800 text-white z-40 mt-16">
+        <div class="container mx-auto flex flex-col px-6 py-4 space-y-4">
+            <a href="#inicio" class="hover:text-blue-300">Inicio</a>
+            <a href="#objetivos" class="hover:text-blue-300">Objetivos</a>
+            <a href="#programa" class="hover:text-blue-300">Programa</a>
+            <a href="#facilitadores" class="hover:text-blue-300">Facilitadores</a>
+            <a href="#costos" class="hover:text-blue-300">Costos</a>
+            <a href="#contacto" class="hover:text-blue-300">Contacto</a>
+        </div>
+    </div>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section flex items-center justify-center text-center text-white relative">
+        <div class="overlay"></div>
+        <div class="container mx-auto z-10 px-6">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-pulse">Maestría en Ciberseguridad Industrial</h1>
+            <p class="text-xl md:text-2xl mb-8 text-blue-300">Forma parte de la próxima generación de expertos en ciberseguridad</p>
+            <a href="#objetivos" class="px-6 py-3 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-700">Más Información</a>
+            <a href="https://webs.unheval.edu.pe/-vicerrectorado-investigacion-laboratorios-y-centros" class="px-6 py-3 mt-4 bg-green-500 text-white font-semibold rounded-md hover:bg-green-700" target="_blank">Visita nuestros laboratorios</a>
+        </div>
+    </section>
+    
+    <!-- Objetivos Section -->
+    <section id="objetivos" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-12 text-white">Objetivos del Programa</h2>
+            <p class="text-lg text-gray-400 mb-8">Desarrollar expertos en ciberseguridad industrial para proteger infraestructuras críticas en entornos tecnológicos avanzados.</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-pink-100 p-6 rounded-lg shadow-lg transition duration-500 transform hover:scale-105">
+                    <i class="fas fa-shield-alt text-blue-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2 text-black">Protección de Infraestructura</h3>
+                    <p class="text-gray-800">Enseñanza enfocada en la seguridad y protección de sistemas industriales.</p>
+                </div>
+                <div class="bg-pink-100 p-6 rounded-lg shadow-lg transition duration-500 transform hover:scale-105">
+                    <i class="fas fa-cogs text-blue-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2 text-black">Gestión de Riesgos</h3>
+                    <p class="text-gray-800">Técnicas para evaluar y mitigar riesgos cibernéticos en entornos industriales.</p>
+                </div>
+                <div class="bg-pink-100 p-6 rounded-lg shadow-lg transition duration-500 transform hover:scale-105">
+                    <i class="fas fa-user-shield text-blue-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2 text-black">Liderazgo en Seguridad</h3>
+                    <p class="text-gray-800">Formación de líderes en ciberseguridad con conocimientos prácticos y teóricos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="anuncio" class="bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-700 text-white py-12 text-center relative">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 animate__animated animate__fadeIn animate__delay-1s">¡Transforma tu Futuro en Ciberseguridad!</h2>
+            <p class="text-xl md:text-2xl mb-6 max-w-3xl mx-auto">
+                "Invierte hoy en tu futuro, conviértete en un líder en ciberseguridad y forma parte de la revolución digital que protegerá el mundo de mañana."
+            </p>
+            <a href="#facilitadores" class="px-8 py-3 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600 transition-all">Únete a la Maestría</a>
+        </div>
+    
+  <!-- Requisitos de Inscripción -->
+  <section class="bg-gradient-to-r from-blue-800 to-red-600 text-gray-100 py-20">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-12 text-white">Requisitos de Inscripción</h2>
+        <p class="text-xl text-center mb-10 max-w-2xl mx-auto">
+            Para inscribirte en la maestría, asegúrate de cumplir con los siguientes requisitos:
+        </p>
+        <ul class="list-disc list-inside space-y-6 max-w-3xl mx-auto bg-gray-700 p-6 rounded-lg shadow-lg">
+            <li class="flex items-start transition-transform transform hover:scale-105">
+                <i class="fas fa-check-circle text-blue-400 mr-4 text-3xl"></i>
+                <span class="text-lg"><strong>Titulación previa:</strong> Se requiere un título universitario en áreas relacionadas con tecnología.</span>
+            </li>
+            <li class="flex items-start transition-transform transform hover:scale-105">
+                <i class="fas fa-check-circle text-blue-400 mr-4 text-3xl"></i>
+                <span class="text-lg"><strong>Conocimientos previos:</strong> Se recomienda tener un entendimiento básico de redes y programación.</span>
+            </li>
+            <li class="flex items-start transition-transform transform hover:scale-105">
+                <i class="fas fa-check-circle text-blue-400 mr-4 text-3xl"></i>
+                <span class="text-lg"><strong>Dominio del idioma inglés:</strong> Se exigirá un nivel intermedio de comprensión.</span>
+            </li>
+            <li class="flex items-start transition-transform transform hover:scale-105">
+                <i class="fas fa-check-circle text-blue-400 mr-4 text-3xl"></i>
+                <span class="text-lg"><strong>Documentación requerida:</strong> Presentar títulos, currículum y/o cartas de recomendación.</span>
+            </li>
+            <li class="flex items-start transition-transform transform hover:scale-105">
+                <i class="fas fa-check-circle text-blue-400 mr-4 text-3xl"></i>
+                <span class="text-lg"><strong>Entrevista personal:</strong> Se llevará a cabo una entrevista para evaluar la motivación y adecuación del postulante.</span>
+            </li>
+            
+        </ul>
+    </div>
+</section>
+<section class="py-12 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 relative overflow-hidden">
+    <div class="container mx-auto px-8 lg:px-12">
+        <!-- Title Section -->
+        <div class="text-center mb-10">
+
+            <h2 class="text-5xl font-extrabold text-white mb-4">Costo y Formas de Pago</h2>
+            <p class="text-lg text-gray-300">Desglose detallado de costos y promociones para estudiantes interesados en la maestría.</p>
+        </div>
+
+        <!-- Promotions Section with 3D Floating Cards -->
+        <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transform transition-all duration-500 hover:scale-105">
+            <!-- Promotion 1 Card -->
+            <div class="relative bg-gradient-to-b from-purple-500 to-purple-700 p-6 rounded-lg shadow-2xl transform transition-all duration-300 hover:-translate-y-4 hover:shadow-purple-800">
+                <div class="absolute top-0 right-0 -mt-4 -mr-4 bg-purple-900 h-16 w-16 rounded-full opacity-50 animate-pulse"></div>
+                <div class="relative z-10">
+                    <img src="mochila.png" alt="Backpack Icon" class="h-10 w-10 mb-4">
+                    <h3 class="text-2xl font-bold text-white mb-2">Promoción 1</h3>
+                    <p class="text-lg text-gray-100 mb-2">Mochila y Útiles Escolares</p>
+                    <p class="text-sm text-gray-300">Los primeros 15 estudiantes reciben una mochila y útiles escolares valorados en <span class="text-green-300 font-semibold">S/ 150</span>.</p>
+                </div>
+            </div>
+
+            <!-- Promotion 2 Card -->
+            <div class="relative bg-gradient-to-b from-teal-500 to-teal-700 p-6 rounded-lg shadow-2xl transform transition-all duration-300 hover:-translate-y-4 hover:shadow-teal-800">
+                <div class="absolute top-0 left-0 -mt-4 -ml-4 bg-teal-900 h-16 w-16 rounded-full opacity-50 animate-pulse"></div>
+                <div class="relative z-10">
+                    <img src="discont.png" alt="Discount Icon" class="h-10 w-10 mb-4">
+                    <h3 class="text-2xl font-bold text-white mb-2">Promoción 2</h3>
+                    <p class="text-lg text-gray-100 mb-2">Descuento en la Mensualidad</p>
+                    <p class="text-sm text-gray-300">Descuento del 10% en la mensualidad durante los primeros 12 meses para los primeros 20 estudiantes (<span class="text-green-300 font-semibold">S/ 360</span> mensuales).</p>
+                </div>
+            </div>
+
+            <!-- Promotion 3 Card -->
+            <div class="relative bg-gradient-to-b from-blue-500 to-blue-700 p-6 rounded-lg shadow-2xl transform transition-all duration-300 hover:-translate-y-4 hover:shadow-blue-800">
+                <div class="absolute bottom-0 right-0 -mb-4 -mr-4 bg-blue-900 h-16 w-16 rounded-full opacity-50 animate-pulse"></div>
+                <div class="relative z-10">
+                    <img src="laptop.png" alt="Laptop Icon" class="h-10 w-10 mb-4">
+                    <h3 class="text-2xl font-bold text-white mb-2">Promoción 3</h3>
+                    <p class="text-lg text-gray-100 mb-2">Sorteo de Materiales Extra</p>
+                    <p class="text-sm text-gray-300">Participa en el sorteo de una laptop o tablet si pagas las mensualidades adelantadas por los primeros 6 meses (premio valorado en <span class="text-green-300 font-semibold">S/ 2,000</span>).</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Floating Elements and Animation -->
+        <div class="absolute -top-10 -left-10 bg-blue-700 rounded-full h-32 w-32 opacity-30 animate-bounce"></div>
+        <div class="absolute -bottom-20 -right-20 bg-purple-700 rounded-full h-40 w-40 opacity-20 animate-ping"></div>
+    </div>
+
+    
+    <section id="anuncio-genero" class="bg-gradient-to-r from-green-500 via-teal-600 to-blue-700 text-white py-12 text-center relative mt-8">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 animate__animated animate__fadeIn animate__delay-1s">Ciberseguridad sin Barreras</h2>
+            <p class="text-xl md:text-2xl mb-6 max-w-3xl mx-auto">
+                "La ciberseguridad no tiene género, tiene talento. Juntos, en un entorno inclusivo, construimos soluciones más fuertes para el futuro."
+            </p>
+            <a href="#programa" class="px-8 py-3 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600 transition-all">Descubre Más</a>
+        </div>
+    </section>
+
+<!-- //---------------------------------------- -->
+
+<!-- Cronograma de Inscripción -->
+<section class="py-10 bg-gradient-to-r from-red-400 to-blue-600">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-12 text-white">Cronograma de Inscripción</h2>
+        <table class="min-w-full bg-gray-700 border border-gray-400 rounded-lg shadow-lg">
+            <thead class="bg-blue-600 text-white">
+                <tr>
+                    <th class="py-3 px-4 border-b border-gray-400">Actividad</th>
+                    <th class="py-3 px-4 border-b border-gray-400">Descripción</th>
+                    <th class="py-3 px-4 border-b border-gray-400">Fecha de Inicio</th>
+                    <th class="py-3 px-4 border-b border-gray-400">Fecha de Finalización</th>
+                    <th class="py-3 px-4 border-b border-gray-400">Responsable</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="hover:bg-blue-500 transition duration-300">
+                    <td class="py-4 px-4 border-b border-gray-400">1. Revisión de Titulación Previa</td>
+                    <td class="py-4 px-4 border-b border-gray-400">Verificación de que los postulantes posean un título universitario en áreas relacionadas con tecnología.</td>
+                    <td class="py-4 px-4 border-b border-gray-400">1 de octubre</td>
+                    <td class="py-4 px-4 border-b border-gray-400">10 de octubre</td>
+                    <td class="py-4 px-4 border-b border-gray-400">Comité de Inscripción</td>
+                </tr>
+                <tr class="hover:bg-blue-500 transition duration-300">
+                    <td class="py-4 px-4 border-b border-gray-400">2. Evaluación de Conocimientos Previos</td>
+                    <td class="py-4 px-4 border-b border-gray-400">Los postulantes deberán acreditar un entendimiento básico de redes y programación mediante pruebas o certificaciones.</td>
+                    <td class="py-4 px-4 border-b border-gray-400">11 de octubre</td>
+                    <td class="py-4 px-4 border-b border-gray-400">15 de octubre</td>
+                    <td class="py-4 px-4 border-b border-gray-400">Comité Académico</td>
+                </tr>
+                <tr class="hover:bg-blue-500 transition duration-300">
+                    <td class="py-4 px-4 border-b border-gray-400">3. Verificación de Dominio del Inglés</td>
+                    <td class="py-4 px-4 border-b border-gray-400">Se evaluará el nivel intermedio de inglés de los postulantes a través de exámenes o certificaciones (como TOEFL, IELTS).</td>
+                    <td class="py-4 px-4 border-b border-gray-400">16 de octubre</td>
+                    <td class="py-4 px-4 border-b border-gray-400">20 de octubre</td>
+                    <td class="py-4 px-4 border-b border-gray-400">Coordinación de Idiomas</td>
+                </tr>
+                <tr class="hover:bg-blue-500 transition duration-300">
+                    <td class="py-4 px-4 border-b border-gray-400">4. Recepción de Documentación</td>
+                    <td class="py-4 px-4 border-b border-gray-400">Los postulantes deberán enviar títulos, currículum, y cartas de recomendación.</td>
+                    <td class="py-4 px-4 border-b border-gray-400">21 de octubre</td>
+                    <td class="py-4 px-4 border-b border-gray-400">31 de octubre</td>
+                    <td class="py-4 px-4 border-b border-gray-400">Oficina de Admisión</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- Programa Section -->
+<section id="programa" class="py-20 bg-gradient-to-b from-gray-800 to-gray relative overflow-hidden ">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-5xl font-bold mb-12 text-white bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">Plan de Estudios</h2>
+        <p class="text-lg text-gray-300 mb-8 shadow-md p-2 rounded bg-gray-800 inline-block">El programa abarca 4 semestres con asignaturas en criptografía, análisis forense, seguridad en redes, y gestión de ciberseguridad.</p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Semester 1 -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-2xl transition-transform duration-500 transform hover:scale-105 hover:shadow-lg hover:brightness-110 relative overflow-hidden">
+                <h3 class="text-3xl font-semibold mb-4 text-white">Primer Semestre</h3>
+                <p class="text-gray-300">Introducción a la Ciberseguridad, Fundamentos y Herramientas de Seguridad.</p>
+                <ul class="mt-4 text-gray-300 text-left">
+                    <li><i class="fas fa-check-circle text-blue-400 mr-2"></i> Introducción a la Ciberseguridad Industrial</li>
+                    <li><i class="fas fa-check-circle text-blue-400 mr-2"></i> Fundamentos Teóricos</li>
+                    <li><i class="fas fa-check-circle text-blue-400 mr-2"></i> Herramientas y Técnicas</li>
+                    <li><i class="fas fa-check-circle text-blue-400 mr-2"></i> Aplicaciones Prácticas</li>
+                </ul>
+                <div class="absolute top-0 right-0 h-32 w-32 bg-blue-300 rounded-full opacity-30 transform translate-x-8 -translate-y-8 animate-pulse"></div>
+            </div>
+            <!-- Semester 2 -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-2xl transition-transform duration-500 transform hover:scale-105 hover:shadow-lg hover:brightness-110 relative overflow-hidden">
+                <h3 class="text-3xl font-semibold mb-4 text-white">Segundo Semestre</h3>
+                <p class="text-gray-300">Gestión de Ciberseguridad, Análisis Forense y Seguridad en Redes.</p>
+                <ul class="mt-4 text-gray-300 text-left">
+                    <li><i class="fas fa-check-circle text-green-400 mr-2"></i> Gestión de Ciberseguridad</li>
+                    <li><i class="fas fa-check-circle text-green-400 mr-2"></i> Análisis Forense Digital</li>
+                    <li><i class="fas fa-check-circle text-green-400 mr-2"></i> Seguridad en Redes</li>
+                    <li><i class="fas fa-check-circle text-green-400 mr-2"></i> Normativas y Regulaciones</li>
+                </ul>
+                <div class="absolute top-0 left-0 h-32 w-32 bg-green-300 rounded-full opacity-30 transform -translate-x-8 -translate-y-8 animate-pulse"></div>
+            </div>
+            <!-- Semester 3 -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-2xl transition-transform duration-500 transform hover:scale-105 hover:shadow-lg hover:brightness-110 relative overflow-hidden">
+                <h3 class="text-3xl font-semibold mb-4 text-white">Tercer Semestre</h3>
+                <p class="text-gray-300">Seguridad en Infraestructuras Críticas, Gestión de Incidentes y Proyectos.</p>
+                <ul class="mt-4 text-gray-300 text-left">
+                    <li><i class="fas fa-check-circle text-red-400 mr-2"></i> Seguridad en Infraestructuras Críticas</li>
+                    <li><i class="fas fa-check-circle text-red-400 mr-2"></i> Gestión de Incidentes</li>
+                    <li><i class="fas fa-check-circle text-red-400 mr-2"></i> Proyectos de Ciberseguridad</li>
+                    <li><i class="fas fa-check-circle text-red-400 mr-2"></i> Tendencias Emergentes</li>
+                </ul>
+                <div class="absolute bottom-0 right-0 h-32 w-32 bg-red-300 rounded-full opacity-30 transform translate-x-8 translate-y-8 animate-pulse"></div>
+            </div>
+            <!-- Semester 4 -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-2xl transition-transform duration-500 transform hover:scale-105 hover:shadow-lg hover:brightness-110 relative overflow-hidden">
+                <h3 class="text-3xl font-semibold mb-4 text-white">Cuarto Semestre</h3>
+                <p class="text-gray-300">Ética y Gobernanza, Desarrollo Seguro y Proyecto Final.</p>
+                <ul class="mt-4 text-gray-300 text-left">
+                    <li><i class="fas fa-check-circle text-purple-400 mr-2"></i> Ética y Gobernanza en Ciberseguridad</li>
+                    <li><i class="fas fa-check-circle text-purple-400 mr-2"></i> Desarrollo de Aplicaciones Seguras</li>
+                    <li><i class="fas fa-check-circle text-purple-400 mr-2"></i> Taller de Investigación Aplicada</li>
+                    <li><i class="fas fa-check-circle text-purple-400 mr-2"></i> Proyecto Final de Maestría</li>
+                </ul>
+                <div class="absolute bottom-0 left-0 h-32 w-32 bg-purple-300 rounded-full opacity-30 transform -translate-x-8 translate-y-8 animate-pulse"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Background Decoration -->
+    <div class="absolute inset-0 pointer-events-none bg-gradient-to-r from-purple-600 to-blue-600 opacity-20 animate-pulse rounded-full transform translate-x-12 -translate-y-12" style="height: 100%; width: 100%; z-index: -1;"></div>
+</section>
+
+<!-- Facilitadores Section -->
+<section id="facilitadores" class="py-20 bg-gradient-to-b from-blue-900 to-blue-600">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-12 text-white">Nuestros Facilitadores</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Facilitator Card: Dr. Juan Pérez -->
+            <div class="text-center bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl border-4 border-white">
+                <img src="img1.jpg" alt="Dr. Juan Pérez" class="rounded-full w-32 h-32 mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2 text-white">Dr. Juan Pérez</h3>
+                <p class="text-blue-300">Doctor en Ingeniería de Sistemas</p>
+                <p class="text-gray-400 mt-2">15+ años en ciberseguridad industrial</p>
+            </div>
+
+            <!-- Facilitator Card: Ing. Ana Gómez -->
+            <div class="text-center bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl border-4 border-white">
+                <img src="img5.jpeg" alt="Ing. Ana Gómez" class="rounded-full w-32 h-32 mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2 text-white">Ing. Ana Gómez</h3>
+                <p class="text-blue-300">Ingeniera en Tecnologías de la Información</p>
+                <p class="text-gray-400 mt-2">Especialista en desarrollo de software seguro</p>
+            </div>
+
+            <!-- Facilitator Card: Lic. Carlos Rodríguez -->
+            <div class="text-center bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl border-4 border-white">
+                <img src="img2.jpg" alt="Lic. Carlos Rodríguez" class="rounded-full w-32 h-32 mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2 text-white">Lic. Carlos Rodríguez</h3>
+                <p class="text-blue-300">Licenciado en Ciencias de la Computación</p>
+                <p class="text-gray-400 mt-2">Experto en análisis forense digital</p>
+            </div>
+
+            <!-- Facilitator Card: Mtra. Laura Fernández -->
+            <div class="text-center bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl border-4 border-white">
+                <img src="img6.jpg" alt="Mtra. Laura Fernández" class="rounded-full w-32 h-32 mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2 text-white">Mtra. Laura Fernández</h3>
+                <p class="text-blue-300">Maestra en Ciberseguridad</p>
+                <p class="text-gray-400 mt-2">Enfocada en enseñanza y capacitación</p>
+            </div>
+
+            <!-- Facilitator Card: Dr. Roberto Castillo -->
+            <div class="text-center bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl border-4 border-white">
+                <img src="img3.jpg" alt="Dr. Roberto Castillo" class="rounded-full w-32 h-32 mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2 text-white">Dr. Roberto Castillo</h3>
+                <p class="text-blue-300">PhD en Seguridad Informática</p>
+                <p class="text-gray-400 mt-2">Experto en criptografía y protección de datos</p>
+            </div>
+
+            <!-- Facilitator Card: Ing. Sofía Martínez -->
+            <div class="text-center bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl border-4 border-white">
+                <img src="img7.jpg" alt="Ing. Sofía Martínez" class="rounded-full w-32 h-32 mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2 text-white">Ing. Sofía Martínez</h3>
+                <p class="text-blue-300">Ingeniera en Redes y Telecomunicaciones</p>
+                <p class="text-gray-400 mt-2">Especialista en seguridad de redes industriales</p>
+            </div>
+
+            <!-- Facilitator Card: Dr. Miguel Herrera -->
+            <div class="text-center bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl border-4 border-white">
+                <img src="img4.jpg" alt="Dr. Miguel Herrera" class="rounded-full w-32 h-32 mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2 text-white">Dr. Miguel Herrera</h3>
+                <p class="text-blue-300">Doctor en Ciberseguridad Aplicada</p>
+                <p class="text-gray-400 mt-2">Investigador en inteligencia artificial y ciberseguridad</p>
+            </div>
+
+            <!-- Facilitator Card: Lic. Gabriela Torres -->
+            <div class="text-center bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl border-4 border-white">
+                <img src="img8.jpg" alt="Lic. Gabriela Torres" class="rounded-full w-32 h-32 mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2 text-white">Lic. Gabriela Torres</h3>
+                <p class="text-blue-300">Licenciada en Informática Forense</p>
+                <p class="text-gray-400 mt-2">Especialista en respuesta ante incidentes</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- //-------------------------------------POR Q ELEGIRNOS -->
+ <!-- Sección "¿Por qué elegirnos?" -->
+ <section class="py-16 bg-gradient-to-r from-blue-800 to-gray-900">
+    <div class="container mx-auto text-center">
+        <h2 class="text-5xl font-bold text-white mb-6">¿Por qué elegirnos?</h2>
+        <p class="text-lg text-gray-300 mb-10">Nuestro programa en Ciberseguridad está diseñado para brindarte las herramientas y conocimientos necesarios para destacar en este campo. Aprenderás de expertos, usarás tecnología avanzada y formarás una red de contactos invaluable.</p>
+
+        <!-- Contenedor con Información en 2 Columnas -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <!-- Información en la Primera Columna -->
+            <div class="text-left space-y-8 lg:space-y-10">
+                <div class="flex items-start space-x-6">
+                    <div class="text-blue-400 text-4xl">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-semibold text-white">Docentes Expertos</h3>
+                        <p class="text-gray-300">Aprende de profesionales con años de experiencia en el campo de la ciberseguridad, quienes compartirán sus conocimientos y experiencias reales.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-6">
+                    <div class="text-blue-400 text-4xl">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-semibold text-white">Tecnología Avanzada</h3>
+                        <p class="text-gray-300">Accede a laboratorios equipados con las últimas tecnologías en ciberseguridad para experimentar de primera mano las herramientas más avanzadas del sector.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-6">
+                    <div class="text-blue-400 text-4xl">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-semibold text-white">Red de Contactos</h3>
+                        <p class="text-gray-300">Únete a una comunidad vibrante de exalumnos y profesionales del sector, lo que te permitirá acceder a oportunidades de networking y crecimiento profesional.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Información en la Segunda Columna -->
+            <div class="text-left space-y-8 lg:space-y-10">
+                <div class="flex items-start space-x-6">
+                    <div class="text-blue-400 text-4xl">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-semibold text-white">Comunidad Inclusiva</h3>
+                        <p class="text-gray-300">Formarás parte de una comunidad inclusiva que fomenta el aprendizaje colaborativo, promoviendo el intercambio de ideas y el trabajo en equipo.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-6">
+                    <div class="text-blue-400 text-4xl">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-semibold text-white">Enfoque Práctico</h3>
+                        <p class="text-gray-300">Nuestro programa tiene un enfoque 100% práctico, con proyectos reales y simulaciones de ciberataques que te permitirán aplicar lo aprendido en situaciones reales.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-6">
+                    <div class="text-blue-400 text-4xl">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-semibold text-white">Certificación Reconocida</h3>
+                        <p class="text-gray-300">Obtén una certificación reconocida internacionalmente por las principales empresas de tecnología y ciberseguridad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //--------------------VIDEO -->
+<section class="bg-gray-50 p-5">
+    <!-- Contenedor principal con grid -->
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Columna izquierda - Video -->
+        <div class="w-full h-full rounded-lg overflow-hidden shadow-lg">
+            <div class="relative pt-[56.25%]">
+                <iframe 
+                    class="absolute top-0 left-0 w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/tUqLaM6CvU0" 
+                    title="Video Presentación Maestría en Ciberseguridad"
+                    style="min-height: 500px;"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Columna derecha - Tabs de información -->
+        <div class="bg-white rounded-lg shadow-lg p-6">
+            <!-- Contenedor de tabs -->
+            <div class="flex border-b-2 border-gray-200 mb-4">
+                <div id="tabDirigido" 
+                     class="flex-1 py-3 px-4 text-center font-bold cursor-pointer text-indigo-600 border-b-3 border-transparent transition-colors duration-300 hover:text-indigo-800 active-tab"
+                     onclick="showTab('Dirigido')">
+                    Dirigido a
+                </div>
+                <div id="tabCompetencias" 
+                     class="flex-1 py-3 px-4 text-center font-bold cursor-pointer text-indigo-600 border-b-3 border-transparent transition-colors duration-300 hover:text-indigo-800"
+                     onclick="showTab('Competencias')">
+                    Competencias a lograr
+                </div>
+            </div>
+
+            <!-- Contenido de tabs -->
+            <div class="overflow-y-auto max-h-[500px]"> <!-- Contenedor scrolleable -->
+                <div id="contentDirigido" class="text-base leading-relaxed text-gray-700 active">
+                    <h3 class="text-xl font-bold mb-4">Dirigido a</h3>
+                    <ul class="list-disc pl-5 space-y-3">
+                        <li>Gerentes de tecnología y de seguridad de la información, de los sectores público y privado, que buscan fortalecer sus conocimientos en ciberseguridad para ser capaces de protegerse, responder y recuperarse de los ataques cibernéticos.</li>
+                        <li>Profesionales de los campos de tecnologías de la información, sistemas de información, auditoría de sistemas, gobierno y gestión en seguridad de la información, seguridad aplicada en el campo regulatorio, seguridad informática, desarrollo de software, sistemas de control industrial, seguridad en canales digitales, entre otros.</li>
+                    </ul>
+                </div>
+
+                <div id="contentCompetencias" class="hidden text-base leading-relaxed text-gray-700">
+                    <h3 class="text-xl font-bold mb-4">Competencias a lograr</h3>
+                    <ul class="list-disc pl-5 space-y-3">
+                        <li>Desarrollar una comprensión sólida de las amenazas cibernéticas y sus mitigaciones.</li>
+                        <li>Aplicar estrategias de defensa para proteger los activos de información.</li>
+                        <li>Evaluar y gestionar riesgos en el entorno digital.</li>
+                        <li>Implementar políticas de seguridad efectivas en la organización.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Función para alternar entre los tabs y mostrar su contenido correspondiente
+    function showTab(tabName) {
+        // Ocultar ambos contenidos
+        document.getElementById('contentDirigido').classList.add('hidden');
+        document.getElementById('contentCompetencias').classList.add('hidden');
+
+        // Eliminar la clase 'active' y el estilo activo de los tabs
+        document.getElementById('tabDirigido').classList.remove('border-indigo-600', 'text-indigo-800');
+        document.getElementById('tabCompetencias').classList.remove('border-indigo-600', 'text-indigo-800');
+
+        // Mostrar el contenido correspondiente al tab
+        if (tabName === 'Dirigido') {
+            document.getElementById('contentDirigido').classList.remove('hidden');
+            document.getElementById('tabDirigido').classList.add('border-indigo-600', 'text-indigo-800');
+        } else if (tabName === 'Competencias') {
+            document.getElementById('contentCompetencias').classList.remove('hidden');
+            document.getElementById('tabCompetencias').classList.add('border-indigo-600', 'text-indigo-800');
+        }
+    }
+
+    // Mostrar "Dirigido a" por defecto al cargar la página
+    window.onload = function() {
+        showTab('Dirigido');
+    }
+</script>
+
+<section id="anuncio-diferenciacion" class="bg-gradient-to-r from-red-500 via-orange-600 to-yellow-700 text-white py-12 text-center relative mt-8">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 animate__animated animate__fadeIn animate__delay-1s">Destácate en la Industria</h2>
+        <p class="text-xl md:text-2xl mb-6 max-w-3xl mx-auto">
+            "La diferencia está en los detalles: especialízate en proteger lo que más importa y prepárate para ser un pionero en el mundo de la ciberseguridad industrial."
+        </p>
+        <a href="#inicio" class="px-8 py-3 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600 transition-all">¡Sé Parte del Cambio!</a>
+    </div>
+</section>
+
+<!-- Contacto Section -->
+<section id="contacto" class="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-6 text-white text-center animate-pulse">Contáctanos</h2>
+        <p class="text-lg text-gray-200 mb-10 text-center">Para más información, envíanos un mensaje a través del formulario o nuestras redes sociales:</p>
+        
+        <div class="grid md:grid-cols-2 gap-10">
+            <!-- Formulario de Contacto -->
+            <form class="bg-white p-8 rounded-lg shadow-2xl transition-transform transform hover:-translate-y-1 hover:shadow-xl">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">Enviar un Mensaje</h3>
+                <div class="mb-4 relative">
+                    <input type="text"  placeholder="Nombre" class="w-full p-3 rounded  bg-gray-100 placeholder-gray-400 text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 shadow focus:shadow-lg transition-shadow duration-300">
+
+                </div>
+                <div class="mb-4 relative">
+                    <input type="email" placeholder="Correo Electrónico" class="w-full p-3 rounded bg-gray-100 placeholder-gray-400 text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 shadow focus:shadow-lg transition-shadow duration-300">
+                  
+                </div>
+                <div class="mb-4 relative">
+                    <textarea placeholder="Mensaje" class="w-full p-3 rounded bg-gray-100 placeholder-gray-400 text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 shadow focus:shadow-lg transition-shadow duration-300" rows="4"></textarea>
+                   
+                </div>
+                <button class="w-full px-6 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-300">Enviar</button>
+                
+                <div class="flex justify-center space-x-6 mt-6">
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/p/aracely-olazo-diaz-100069768442093/" target="_blank" class="inline-block px-6 py-3 bg-blue-500 text-white rounded-full text-lg font-semibold hover:bg-blue-600 transition duration-300">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <!-- Twitter -->
+                    <a href="https://x.com/?logout=1730850358091" target="_blank" class="inline-block px-6 py-3 bg-blue-400 text-white rounded-full text-lg font-semibold hover:bg-blue-500 transition duration-300">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                    <!-- LinkedIn -->
+                    <a href="www.linkedin.com/in/aracely-olazo-diaz-68a914228" target="_blank" class="inline-block px-6 py-3 bg-blue-700 text-white rounded-full text-lg font-semibold hover:bg-blue-800 transition duration-300">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <!-- WhatsApp -->
+                    <a href="https://api.whatsapp.com/send/?phone=51910800639&text&type=phone_number&app_absent=0" target="_blank" class="inline-block px-6 py-3 bg-green-500 text-white rounded-full text-lg font-semibold hover:bg-green-600 transition duration-300">
+                        <i class="fab fa-whatsapp-square"></i>
+                    </a>
+                    
+                </div>
+                
+            </form>
+
+            <!-- Información de Contacto y Soporte -->
+            <div class="text-left bg-white p-8 rounded-lg shadow-2xl">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">Contacto y Soporte</h3>
+                <p class="text-gray-600 mb-2">Asesoría Académica y Soporte Técnico disponible 24/7.</p>
+                
+                <div class="bg-gray-100 p-4 rounded-lg shadow-md mb-4">
+                    <p class="text-lg font-semibold text-blue-600 flex items-center">
+                        <i class="fas fa-user-circle mr-2"></i> Anthoane Camila JULCA ARZAPALO
+                    </p>
+                    <p class="text-gray-600">Correo: <a href="mailto:2114403030@undac.edu.pe" class="text-blue-500 hover:underline">2114403030@undac.edu.pe</a></p>
+                    <p class="text-gray-600">WhatsApp: <a href="https://wa.me/910800639" class="text-blue-500 hover:underline">910800639</a></p>
+                    <p class="text-gray-600">Teléfono: 910800639 (Lunes a Viernes, 8:00 a 18:00 hrs.)</p>
+                </div>
+                
+                <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+                    <p class="text-lg font-semibold text-blue-600 flex items-center">
+                        <i class="fas fa-user-circle mr-2"></i> Fiorella Aracely OLAZO DIAZ
+                    </p>
+                    <p class="text-gray-600">Correo: <a href="mailto:2144403193@undac.edu.pe" class="text-blue-500 hover:underline">2144403193@undac.edu.pe</a></p>
+                    <p class="text-gray-600">WhatsApp: <a href="https://wa.me/950900830" class="text-blue-500 hover:underline">950900830</a></p>
+                    <p class="text-gray-600">Teléfono: 950900830 (Lunes a Viernes, 8:00 a 18:00 hrs.)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="flex justify-center items-center w-full py-10">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.0544928081613!2d-76.2532862262323!3d-9.948975406394391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a7c2c04dba6beb%3A0x35f1bb14f5be9e6c!2sUniversidad%20Nacional%20Hermilio%20Valdiz%C3%A1n!5e1!3m2!1ses-419!2spe!4v1730850500599!5m2!1ses-419!2spe" 
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+
+
+    <footer class="bg-gray-1000 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2024 Maestría en Ciberseguridad Industrial. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+<!--Chatbox-->
+<div id="chatbox" style="display: none;">
+    <!-- Contenedor para el iframe del chat -->
+    <iframe src="https://share.imagica.ai/?q=52e27262-c888-4079-8fed-42ae5c6209d7" style="width: 100%; height: 100%; border: none;"></iframe>
+    
+    <!-- Botón de "Otra consulta" dentro del chat -->
+    <button id="reset-button" onclick="resetChat()" style="position: absolute; bottom: 10px; left: 10px; padding: 5px 10px; background-color: #ff208f; color: white; border: none; cursor: pointer;">
+        Otra consulta
+    </button>
+</div>
+
+<button id="chat-button" onclick="toggleChat()">
+    <img src="CHAT.png" alt="Chat" style="width: 70px; height: 70px;">
+</button>
+
+<!-- Notificación si el chat está oculto -->
+<div id="notification" style="position: fixed; bottom: 80px; right: 20px; background-color: #ff208f; color: white; padding: 10px 20px; border-radius: 10px; display: none; cursor: pointer;">
+    Pide ayuda a Secubot
+</div>
+
+<style>
+    /* Posicionar el botón de chat en la esquina inferior derecha */
+    #chat-button {
+        position: fixed;
+        bottom: 20px;  /* Distancia desde el fondo */
+        right: 20px;   /* Distancia desde la derecha */
+        background-color: transparent; /* Fondo transparente */
+        border: none;  /* Sin borde */
+        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+        z-index: 9999;  /* Asegura que el botón esté por encima de otros elementos */
+    }
+
+    /* Asegúrate de que el iframe dentro del chatbox no afecte el contenido */
+    #chatbox {
+        position: fixed;
+        bottom: 70px;  /* Para que no esté justo sobre el botón */
+        right: 20px;
+        width: 300px;
+        height: 400px;
+        border: 3px solid #ff208f; /* Borde fucsia */
+        display: none;  /* Inicialmente oculto */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Añadir sombra para darle un efecto flotante */
+        background-color: transparent; /* Fondo transparente */
+        border-radius: 10px; /* Bordes redondeados */
+        padding: 10px;
+    }
+
+    #reset-button {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        padding: 5px 10px;
+        background-color: #e945ff;
+        color: rgb(255, 255, 255);
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    /* Estilo de la notificación */
+    #notification {
+        display: none;  /* Inicialmente oculta */
+        font-size: 14px;
+        z-index: 9999;
+    }
+</style>
+
+<script>
+    // Función para alternar la visibilidad del chatbox
+    function toggleChat() {
+        const chatbox = document.getElementById("chatbox");
+        const notification = document.getElementById("notification");
+
+        if (chatbox.style.display === "none" || chatbox.style.display === "") {
+            chatbox.style.display = "block";  // Mostrar el chatbox
+            notification.style.display = "none"; // Ocultar la notificación
+        } else {
+            chatbox.style.display = "none";  // Ocultar el chatbox
+            notification.style.display = "block"; // Mostrar la notificación
+        }
+    }
+
+    // Función para borrar el contenido del iframe y mostrar una nueva consulta
+    function resetChat() {
+        const chatbox = document.getElementById("chatbox");
+        
+        // Reinicia el iframe con el enlace original para borrar el estado
+        const iframe = chatbox.querySelector("iframe");
+        iframe.src = "https://share.imagica.ai/?q=0d5555c8-5af4-41cd-8819-0e635e313693"; // Resetear el iframe
+
+        // Si el chat está abierto, espera un poco y luego reinicia el iframe
+        setTimeout(() => {
+            iframe.contentWindow.location.reload();  // Recarga el contenido del iframe
+        }, 500);  // Añadir pequeño retardo para asegurar que se recargue correctamente
+    }
+
+    // Mostrar la notificación al cargar la página y ocultar el chatbox
+    window.onload = function() {
+        const chatbox = document.getElementById("chatbox");
+        const notification = document.getElementById("notification");
+
+        // Ocultar el chatbox al cargar la página
+        chatbox.style.display = "none";  // Ocultar el chatbox inicialmente
+        notification.style.display = "block";  // Mostrar la notificación
+    }
+
+    // Cuando se haga clic en la notificación, abrir el chat
+    document.getElementById("notification").onclick = function() {
+        toggleChat();  // Esto abrirá el chat y ocultará la notificación
+    }
+</script>
+
+
+</body>
+</html>
